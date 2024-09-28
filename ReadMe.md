@@ -46,7 +46,7 @@ Sampling in the context of diffusion models refers to the process of generating 
     xt−1​=μθ​(xt​,t)+σ(t)⋅ϵ
     Here, μθ​ is the model's prediction of the mean, xt​ is the current noisy image, and ϵ is sampled from a normal distribution.
         
-        ![image.png](image.png)
+        ![image.png](.\assets\image.png)
         
 5. **Stopping Criterion**:
     - This iterative process continues until you reach the last step (usually step 1), where the final output is expected to resemble a sample from the training distribution.
