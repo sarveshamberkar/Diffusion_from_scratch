@@ -46,7 +46,7 @@ Sampling in the context of diffusion models refers to the process of generating 
     xt−1​=μθ​(xt​,t)+σ(t)⋅ϵ
     Here, μθ​ is the model's prediction of the mean, xt​ is the current noisy image, and ϵ is sampled from a normal distribution.
         
-        ![image.png](.\assets\image.png)
+        ![image.png](https://github.com/sarveshamberkar/Diffusion_from_scratch/blob/main/assets/image.png)
         
 5. **Stopping Criterion**:
     - This iterative process continues until you reach the last step (usually step 1), where the final output is expected to resemble a sample from the training distribution.
@@ -65,7 +65,7 @@ Sampling in the context of diffusion models refers to the process of generating 
 
 PSUDO code for sampling 
 
-![image.png](image%201.png)
+![image.png](https://github.com/sarveshamberkar/Diffusion_from_scratch/blob/main/assets/image%201.png)
 
 ### Classifier-free guidance
 
@@ -86,7 +86,7 @@ Classifier-free guidance is a technique used in diffusion models to improve the 
         
         
     
-    ![image.png](image%202.png)
+    ![image.png](https://github.com/sarveshamberkar/Diffusion_from_scratch/blob/main/assets/image%202.png)
     
     - Here, λ is a hyperparameter that controls the strength of the guidance. A higher λ places more emphasis on the conditioning, resulting in outputs that more closely adhere to the prompt.
         
@@ -109,7 +109,7 @@ Classifier-free guidance is a technique used in diffusion models to improve the 
 
 Classifier-free guidance is a powerful technique that enables better control over the output of diffusion models, particularly in generating images based on text prompts. By leveraging both conditioned and unconditioned outputs, it enhances the quality, relevance, and diversity of generated samples.
 
-![image.png](image%203.png)
+![image.png](https://github.com/sarveshamberkar/Diffusion_from_scratch/blob/main/assets/image%203.png)
 
 ## DDPM(**Denoising Diffusion Probabilistic Models**)
 
@@ -141,21 +141,21 @@ This stabilizes the NN so it doesn’t collapse to something closer to the avera
 
 - **Novelty**: In creative applications (like image generation), adding noise can lead to more novel outputs that deviate from typical training samples, fostering innovation and unexpected results.
 
-![image.png](image%204.png)
+![image.png](https://github.com/sarveshamberkar/Diffusion_from_scratch/blob/main/assets/image%204.png)
 
 Architecture 
 
 we use UNET architecture which actually works good for segmentation and similar task
 
-![image.png](image%205.png)
+![image.png](https://github.com/sarveshamberkar/Diffusion_from_scratch/blob/main/assets/image%205.png)
 
  
 
-![image.png](image%203.png)
+![image.png](https://github.com/sarveshamberkar/Diffusion_from_scratch/blob/main/assets/image%203.png)
 
 1. Training Process
 
-![image.png](image%206.png)
+![image.png](https://github.com/sarveshamberkar/Diffusion_from_scratch/blob/main/assets/image%206.png)
 
 Loss function Mean square error loss 
 
@@ -163,7 +163,7 @@ Loss function Mean square error loss
 
 Controlling means adding context embedding which means adding text embedding in the model. classifier free training refers to the same concept 
 
-![image.png](image%207.png)
+![image.png](https://github.com/sarveshamberkar/Diffusion_from_scratch/blob/main/assets/image%207.png)
 
 Faster sampling method
 
@@ -180,7 +180,7 @@ Many new sampler address this problem of the speed
 
 one is called DDIM (denoising diffusion implicit model)
 
-![image.png](image%208.png)
+![image.png](https://github.com/sarveshamberkar/Diffusion_from_scratch/blob/main/assets/image%208.png)
 
 DDIm is faster because it skips timesteps
 
